@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+
+#game {
+    width: 700px;
+    height: 200px;
+    border-bottom: 1px solid #ffffff;
+}
+
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: #FF0000;
+    position: relative;
+    top: 150px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: #4169E1;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 480px;}
+    100%{left: -480px;}
+}
+
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+
+}
