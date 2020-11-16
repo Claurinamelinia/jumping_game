@@ -19,11 +19,15 @@ body {
 }
 
 #character {
-    width: 20px;
+    width: 38px;
     height: 50px;
-    background-color: #FF0000;
+    /* background-color: #FF0000; */
     position: relative;
     top: 150px;
+    background-image: url(../img/t-rex.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .animate {
